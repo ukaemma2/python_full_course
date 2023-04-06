@@ -1,0 +1,66 @@
+
+#container_wrapper {
+    background: rgb(180, 210, 180);
+    font-size: 14px;
+  }
+h1 {
+    text-align: center;
+}
+
+.welcom_page {
+    margin-top: 2em !important;
+
+}
+.section_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.nav {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(177, 92, 92);
+}
+.nav_wrapper {
+    flex: 0.5;
+}
+.page_wrapper {
+    flex: 1;
+}
+.content_text {
+    font-size: large;
+    font-weight: 800;
+    margin-top: 2em;
+    color: rgb(5, 110, 49);
+}
+.btn {
+    border-radius: 5%;
+    border: none;
+    padding: 1em 2em 1em 2em;
+    cursor: pointer;
+}
+.btn_green {
+    background-color: rgb(145, 250, 145);
+}
+.btn_yellow {
+    background-color: rgb(234, 234, 52);
+}
+.btn_orange {
+    background-color: rgb(249, 180, 50);
+}
+.btn_grey {
+    background-color: rgb(154, 152, 152);
+}
+.btn_pink {
+    background-color: pink;
+}
+.content_wrapper {
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+}
+.programming {
+    font-size: 5em;
+    font-weight: 800;
+    text-underline-position: below;
+}
