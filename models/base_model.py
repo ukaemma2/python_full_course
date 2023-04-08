@@ -31,6 +31,6 @@ class BaseModel:
         return returned_dict
 
 
-# def __str__(self):
-   
-#     return "[{}] ({}) {}".format( self.__dict__)
+    def __str__(self):
+        className = self.__class__.__name__
+        return "[{}] ({}) {}".format(className, self.id, self.__dict__)
