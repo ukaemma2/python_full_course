@@ -1,81 +1,56 @@
-
-#container_wrapper {
-    background: rgb(180, 210, 180);
-    font-size: 14px;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+h1, h3, h4, h5, p {
+    margin-bottom: 22px;
   }
-h1 {
-    text-align: center;
-}
-
-.welcom_page {
-    margin-top: 2em !important;
-
-}
-.section_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-.nav {
-    text-decoration: underline;
-    cursor: pointer;
-    color: rgb(177, 92, 92);
-}
-.nav_wrapper {
-    flex: 0.5;
-}
-.page_wrapper {
-    flex: 1;
-}
-.content_text {
-    font-size: large;
-    font-weight: 800;
-    margin-top: 2em;
-    color: rgb(5, 110, 49);
-    text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
-    word-spacing: .25em;
-    
-}
+  
 .btn {
-    border-radius: 100%;
-    border: 1px solid rgb(255, 255, 255);
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 4em;
-    padding-right: 4em;
-    cursor: pointer;
-    margin: 1em;
-    box-shadow: 3px 6px 2px rgba(0, 0, 0, .3);;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
 }
-.btn_green {
-    background-color: rgb(145, 250, 145);
-    float:right;
-   
+
+.btn-alt {
+    border: 1px solid #dfe2e5;
+    padding: 10px 30px;
 }
-.btn_yellow {
-    background-color: rgb(234, 234, 52);
+.hero {
+    padding: 22px 80px 66px 80px;
+  }
+
+.container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 960px;
+  }
+  */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
 }
-.btn_orange {
-    background-color: rgb(249, 180, 50);
+.group:after {
+  clear: both;
 }
-.btn_grey {
-    background-color: rgb(154, 152, 152);
+.group {
+  clear: both;
+  *zoom: 1;
 }
-.btn_pink {
-    background-color: pink;
-}
-.content_wrapper {
-    
-    bottom: 10%;
-    right: 30%;
-    margin-top: 5rem;
-    font-variant: normal;
-    font-weight: 900;
-   
-}
-.programming {
-    font-size: 5em;
-    font-weight: 800;
-    text-underline-position: below;
-    letter-spacing: em;;
-}
+.logo {
+    float: left;
+    border-top: 4px solid #648880;
+    padding: 40px 0 22px 0;
+  }
+.primary-footer small {
+    float: left;
+  }
+  .primary-footer {
+    padding-bottom: 44px;
+    padding-top: 44px;
+  }
