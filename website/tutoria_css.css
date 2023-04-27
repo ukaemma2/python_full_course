@@ -33,6 +33,8 @@ h5 {
     color: #a9b2b9;
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
+    
   }
   
 .btn {
@@ -55,13 +57,16 @@ h5 {
     padding-left: 20px;
     padding-right: 20px;
     width: 960px;
+    text-align: center;
 }
+
 */
 .group:before,
 .group:after {
   content: "";
   display: table;
 }
+
 .group:after {
   clear: both;
 }
@@ -108,13 +113,18 @@ h5 {
 .hero {
   padding-left: 10px;
   padding-right: 10px;
+  
 }
 a:hover {
     color: #a9b2b9;
   }
-  a {
+a {
     color: #648880;
-  }
+    text-decoration: none;
+}
+p a {
+    border-bottom: 1px solid #dfe2e5;
+}
 .logo {
     border-top: 4px solid #648880;
     float: left;
@@ -124,10 +134,13 @@ a:hover {
 }
 .tagline {
     margin: 66px 0 22px 0;
+    text-align: right;
 }
 .primary-nav {
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
 }
 
 .primary-footer {
@@ -149,4 +162,7 @@ a:hover {
   }
   .container p {
     font-size: 24px;
+  }
+  .nav {
+    text-align: right;
   }
