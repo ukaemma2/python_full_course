@@ -6,18 +6,13 @@
           box-sizing: border-box;
 }
 html body{
-  color: #f8f5f5;
-  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
- 
-  background-image:  url("blue_bacground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
- 
-
+  background: radial-gradient(#648880, #293f50);
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1, h3, h4, h5, p {
     margin-bottom: 22px;
-    color: #f7f9f9;
+    color: #9ed7d7;
   }
 h1 {
 font-size: 36px;
@@ -34,22 +29,31 @@ h4 {
 font-size: 18px;
 }
 h5 {
-    color: #f2f5f7;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
+  color: #595c5e;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
     
-  }
+}
   
 .btn {
-    border-radius: 5px;
-    display: inline-block;
-    margin: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .btn-alt {
-    border: 1px solid #dfe2e5;
-    padding: 10px 30px;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
 }
 .hero {
     padding: 22px 80px 66px 50px;
@@ -58,9 +62,10 @@ h5 {
 
 .container {
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
     width: 960px;
+    color: #fff;
+    line-height: 44px;
+    padding: 22px 80px 66px 80px;
     text-align: center;
 }
 
@@ -121,9 +126,11 @@ h5 {
   padding-right: 10px;
   
 }
-a:hover {
-    color: #0be792;
-  }
+a:hover{
+  color: #648880;
+
+}
+
 a {
     color: #e3f5f5;
     text-decoration: none;
@@ -172,3 +179,17 @@ p a {
   .nav {
     text-align: right;
   }
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
+.row {
+  background: #fff;
+  min-width: 100%;
+  padding: 66px 0 44px 0;
+}
