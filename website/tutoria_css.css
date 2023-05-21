@@ -5,39 +5,19 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-html body{
-  background: #466368;
-  background: -webkit-linear-gradient(#648880, #293f50);
-  background:    -moz-linear-gradient(#648880, #293f50);
-  background:         linear-gradient(#648880, #293f50);
+body {
+  background: #293f50;
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1, h3, h4, h5, p {
-    margin-bottom: 22px;
-    color: #9ed7d7;
-  }
+  margin-bottom: 22px;
+  color: #9ed7d7;
+}
 h1 {
-font-size: 36px;
-line-height: 44px;
+  margin-top: 0 !important;
 }
-h2 {
-font-size: 24px;
-line-height: 44px;
-}
-h3 {
-font-size: 21px;
-}
-h4 {
-font-size: 18px;
-}
-h5 {
-  color: #595c5e;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-    
-}
+
   
 .btn {
   border-radius: 5px;
@@ -50,12 +30,9 @@ h5 {
   text-transform: uppercase;
 }
 
+
 .btn-alt {
-  background: #cbe2c1;
-  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
-  padding: 44px 0 22px 0;
+  border: 1px solid #fff;
   padding: 10px 30px;
 }
 .btn-alt:hover {
@@ -63,7 +40,7 @@ h5 {
   color: #648880;
 }
 .hero {
-    padding: 22px 80px 66px 50px;
+    padding: 0px 80px 66px 50px;
     
   }
 
@@ -72,7 +49,7 @@ h5 {
     width: 960px;
     color: #fff;
     line-height: 44px;
-    padding: 22px 80px 66px 80px;
+    padding: 0px 80px 66px 80px;
     text-align: center;
 }
 
@@ -90,38 +67,7 @@ h5 {
   clear: both;
   *zoom: 1;
 }
-.logo {
-    float: left;
-    border-top: 4px solid #f3f4f4;
-    padding: 40px 0 22px 0;
-  }
-.primary-footer small {
-    float: left;
-  }
-.primary-footer {
-    padding-bottom: 44px;
-    padding-top: 44px;
-}
 
-
-.col-1-3 {
-    width: 32%;
-}
-.col-2-3 {
-    width: 66.66%;
-}
-
-.col-1-3,
-.col-2-3 {
-  display: inline-block;
-  vertical-align: top;
-}
-.grid,
-.col-1-3,
-.col-2-3 {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .hero,
 .grid {
   margin: 0 auto;
@@ -142,18 +88,19 @@ a {
     color: #e3f5f5;
     text-decoration: none;
 }
-p a {
-    border-bottom: 1px solid #8bbced;
-}
+
 .logo {
-    border-top: 4px solid #f1f6f5;
-    float: left;
-    font-size: 48px;
-    line-height: 44px;
-    padding: 40px 0 22px 0;
+  border-top: 4px solid #648880;
+  float: left;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .8px;
+  line-height: 47px;
+  padding: 4px 0 22px 0;
+  text-transform: uppercase;
 }
 .tagline {
-    margin: 66px 0 22px 0;
+    margin: 30px 0 22px 0;
     text-align: right;
 }
 .primary-nav {
@@ -166,7 +113,7 @@ p a {
 .primary-footer {
     color: #f7fafa;
     font-size: 14px;
-    padding-bottom: 44px;
+    padding-bottom: 4px;
     padding-top: 44px;
   }
   .primary-footer small {
@@ -186,44 +133,41 @@ p a {
   .nav {
     text-align: right;
   }
-.primary-header a,
-.primary-footer a {
-  color: #fff;
-}
-.primary-header a:hover,
-.primary-footer a:hover {
-  color: #648880;
-}
+  .primary-header a,
+  .primary-footer a {
+    color: #fff;
+  }
+  .primary-header a:hover,
+  .primary-footer a:hover {
+    color: #648880;
+  }
 
 
+  .row,
+  .row-alt{
+    min-width: 960px;
+  }
+  .row {
+    background: #fff;
+    padding: 66px 0 44px 0;
+  }
+  .row-alt {
+     background: #cbe2c1;
+     background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+     background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+     background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+     padding: 44px 0 22px 0;
+  }  
+  #wrapper{
+    background-color: white;
+  }
 
-.row,
-.row-alt{
-  min-width: 960px;
-}
-
-.row {
-   background: #f6f8f9;
-   background: -webkit-linear-gradient(to right, #f2f3f5, #f0f3fa);
-   background: -webkit-linear-gradient(to right, #f2f3f5, #f0f3fa);
-   background: -webkit-linear-gradient(to right, #f2f3f5, #f0f3fa);
- 
-   padding: 44px 0 22px 0;
- }
- .unordered_ordered_lists {
-  color: rgb(2, 2, 2);
-  
-  list-style-position: inside;
-  list-style-type: none;
-  font-family: 'Courier New', Courier, monospace;
- }
- ol {
-  list-style-type: none;
- }
- .dog {
-  max-width: 100%;
-  padding: auto;
-  width: 100%;
-  height: 5%;
-
- }
+  .section_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    
+  }
+  .content_wrapper {
+    flex-grow: .5;
+  }
