@@ -67,8 +67,7 @@ h1 {
   *zoom: 1;
 }
 
-.hero,
-.grid {
+.hero{
   margin: 0 auto;
   width: 80%;
   
@@ -197,4 +196,14 @@ a {
   }
 .col-1-3 {
   padding-top: 7em;
+}
+.venue-map {
+  height: 264px;
+  width:  100%;
+}
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
 }
