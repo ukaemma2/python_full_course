@@ -11,7 +11,7 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
 
-        time_frame = '%Y-%m-%dT%H: %M:%SZ GMT %Z'
+        time_frame = "%Y-%m-%dT%H:%M:%S.%f"
         
         self.id = str(uuid.uuid4())
         self.created_at = datetime.today()
@@ -24,8 +24,8 @@ class BaseModel:
                 else:
                     self.__dict__[k] = v
 
-        else: 
-            models.storage.new(self)
+        # else: 
+        #     # models.storage.new(self)
 
     def save(self):
         """update updated_at time to the current time""" 
