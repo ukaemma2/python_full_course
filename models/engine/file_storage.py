@@ -6,10 +6,14 @@ class FileStorage:
     __objects = {}
 
     def all(self):
-       return self.__objects
+       return FileStorage.__objects
 
     def new(self, obj):
         className = obj.__class__.__name__
-        self.__objects['{}.{}'.format(className, obj.id)] = obj
+        FileStorage.__objects['{}.{}'.format(className, obj.id)] = obj
 
     def save(self):
+        otherdictionary = FileStorage.__objects
+        objectDictionary = {obj: otherdictionary[obj].to_dict() for obj in objectDictionary.keys()}
+        with open(FileStorage.__file_path, 'w') as file_handle:
+            json.dump(objectDictionary, file_handle)
