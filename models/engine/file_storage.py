@@ -17,3 +17,5 @@ class FileStorage:
         objectDictionary = {obj: otherdictionary[obj].to_dict() for obj in objectDictionary.keys()}
         with open(FileStorage.__file_path, 'w') as file_handle:
             json.dump(objectDictionary, file_handle)
+
+    
