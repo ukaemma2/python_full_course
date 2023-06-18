@@ -20,7 +20,7 @@ class FileStorage:
 
     def reload(self):
         try:
-            with open(FileStorage.__file_path, 'w') as file_handle:
+            with open(FileStorage.__file_path) as file_handle:
                 objectDictionary = json.load(file_handle)
                 for obj in objectDictionary.values():
                     className = obj["__class_-"]
