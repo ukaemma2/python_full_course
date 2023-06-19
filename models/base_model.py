@@ -6,6 +6,7 @@ import uuid
 from datetime import datetime
 import models
 
+
 class BaseModel:
     """base models function call"""
 
@@ -24,17 +25,18 @@ class BaseModel:
                 else:
                     self.__dict__[k] = v
 
-        # else: 
-        #     # models.storage.new(self)
+        else: 
+            models.storage.new(self)
 
     def save(self):
         """update updated_at time to the current time""" 
         self.updated_at = datetime.today ()
+        models.storage.save()
 
     def to_dict(self):
         """return a dict representation of this model instance 
         with the following fields: id, created_at, updated_at and className
-        or key/value pairs 1for all fileds of the model instance 
+        or key/value pairs 1for a ll fileds of the model instance 
         in the database
         """
 
