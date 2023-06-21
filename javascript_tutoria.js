@@ -16,7 +16,18 @@
     
 // }
 
-let a = 3;
-a += 12
+var prime = 'emma';
+var prime = 'chika';
+console
+console.log(prime)
 
-console.log();
+let USA = 'California';
+USA = 'Colorado'
+console.log(USA)
+
+const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+
+
+console.log(sampleStr);
+    const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"'; 
+const badStr = 'Finn responds, "Let\'s go!"';
