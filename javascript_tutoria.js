@@ -41,3 +41,13 @@ let lastLetterOfAphpebate = aphabate[aphabate.length -1];
 
 console.log(lastLetterOfAphpebate)
 
+
+
+function Chris() {
+
+    let t = 7;
+    t = 700;
+    if (t === 700) return true;
+    else return false
+}
+console.log(Chris())
