@@ -35,19 +35,24 @@
 
 
 
-let aphabate = 'ABCDEFGHIJKLMNOPQRSTUVWSYZ';
+// let aphabate = 'ABCDEFGHIJKLMNOPQRSTUVWSYZ';
 
-let lastLetterOfAphpebate = aphabate[aphabate.length -1];
+// let lastLetterOfAphpebate = aphabate[aphabate.length -1];
 
-console.log(lastLetterOfAphpebate)
+// console.log(lastLetterOfAphpebate)
 
 
 
-function Chris() {
+// function Chris() {
 
-    let t = 7;
-    t = 700;
-    if (t === 700) return true;
-    else return false
-}
-console.log(Chris())
+//     let t = 7;
+//     t = 700;
+//     if (t === 700) return true;
+//     else return false
+// }
+// console.log(Chris())
+
+let Chris = 20;
+let emma = 10;
+
+if (emma === 10 && Chris === 20) return true;
