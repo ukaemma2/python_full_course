@@ -36,7 +36,7 @@ class BaseModel:
     def to_dict(self):
         """return a dict representation of this model instance 
         with the following fields: id, created_at, updated_at and className
-        or key/value pairs 1for a ll fileds of the model instance 
+        or key/value pairs for a ll fileds of the model instance 
         in the database
         """
 
