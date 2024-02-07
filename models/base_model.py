@@ -32,7 +32,7 @@ class BaseModel:
         """update updated_at time to the current time""" 
         self.updated_at = datetime.today ()
         models.storage.save()
-
+ 
     def to_dict(self):
         """return a dict representation of this model instance 
         with the following fields: id, created_at, updated_at and className
@@ -50,3 +50,5 @@ class BaseModel:
     def __str__(self):
         className = self.__class__.__name__
         return "[{}] ({}) {}".format(className, self.id, self.__dict__)
+    
+    
