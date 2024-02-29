@@ -8,6 +8,7 @@ import models
 
 
 class BaseModel:
+    
     """base models function call"""
 
     def __init__(self, *args, **kwargs):
