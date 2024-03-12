@@ -54,6 +54,5 @@
 
 let Chris = 20;
 let emma = 10;
-let tjm = 10;
 
 if (emma === 10 && Chris === 20) return true;
